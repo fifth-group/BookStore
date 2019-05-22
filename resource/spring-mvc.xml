@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+	        
+	<!-- 告知Spring要扫描的包 -->        
+	<context:component-scan base-package="web.bookStore.controller"></context:component-scan>
+	
+	<!-- 配置SpringMVC的视图解析器 :用于找到相应的jsp-->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/web/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<mvc:annotation-driven/>
+	
+	<!-- 配置上传文件的组件id必须是multipartResolver  -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 配置最大上传文件大小为10M -->
+		<property name="maxUploadSize" value="10000000" />
+		<!-- 设置默认的编码格式 -->
+		<property name="defaultEncoding" value="utf-8" />
+	</bean>
+	
+	<!-- 配置拦截器 
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/user/*"/>
+			<mvc:mapping path="/order/*"/>
+			<mvc:mapping path="/cart/*"/>
+			<mvc:mapping path="/collection/*"/>
+			<mvc:mapping path="/order/*"/>
+			<mvc:exclude-mapping path="/user/showLogin.do"/>
+			<mvc:exclude-mapping path="/user/showRegister.do"/>
+			<mvc:exclude-mapping path="/user/login.do"/>
+			<mvc:exclude-mapping path="/user/register.do"/>
+			<mvc:exclude-mapping path="/user/checkUsername.do"/>
+			<mvc:exclude-mapping path="/user/checkPhone.do"/>
+			<mvc:exclude-mapping path="/user/checkEmail.do"/>
+			<bean class="web.bookStore.interceptor.LoginInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	-->
+
+</beans>
