@@ -1,0 +1,112 @@
+﻿html {
+    background: #ffe7ce;
+}
+
+#header_entirety {
+    text-align: center;
+    margin: 100px 0 0px;
+}
+
+#header_entirety .haofeng_logo {
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#main_entirety {
+    text-align: center;
+    padding: 10px;
+    width: 400px;
+    margin: 20px auto 40px;
+}
+
+#main_entirety ul li {
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+#main_entirety .detail_message ul li {
+    border-bottom: dotted 2px #ddd;
+    padding-bottom: 20px;
+}
+
+#main_entirety .account_message,#main_entirety .detail_message {
+    border-top: dotted 2px #ddd;
+    padding: 10px 0;
+}
+
+#main_entirety .message_vessel {
+    display: inline-block
+}
+
+#main_entirety .input_vessel {
+    line-height: 40px;
+    height: 40px;
+    border: solid 1px #ddd;
+    width: 390px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+#main_entirety .message_area {
+    display: inline-block
+}
+
+#main_entirety .message_area .area_btn {
+    width: 130px;
+    height: 40px;
+    margin: 5px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#main_entirety .message_content {
+    width: 398px;
+    height: 80px;
+    border: solid 1px #ddd;
+    font-size: 16px;
+}
+
+
+
+#main_entirety .submit_message {
+    clear: both;
+    margin: 20px 0;
+    overflow: hidden
+}
+
+#main_entirety .submit_btn {
+    width: 135px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #da6a50;
+    border: solid 1px #da6a50;
+    border-radius: 5px;
+    clear: both;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#main_entirety .back_btn {
+    line-height: 40px;
+    font-size: 16px;
+    color: #767470;
+    margin-top: 10px;
+}
+
+#main_entirety .back_btn a {
+    font-size: 16px;
+    color: #da6a50;
+    text-decoration: underline
+}
+
+#main_entirety .error_hint {
+    display: block;
+    text-align: left;
+    color: #f92e2e;
+    font-size: 14px;
+    margin-top: 8px;
+}

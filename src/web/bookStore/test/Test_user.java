@@ -11,7 +11,7 @@ public class Test_user {
 
 	@Test
 	public void login() {
-		ApplicationContext applicationContext = new   ClassPathXmlApplicationContext("application-dao.xml","application-service.xml");
+		 ApplicationContext applicationContext = new   ClassPathXmlApplicationContext("application-dao.xml","application-service.xml");
 		 IUserService iUserService = applicationContext.getBean("userService", UserService.class);
 		 System.out.println( iUserService.login("ha", "ha1234"));
 	}

@@ -21,7 +21,7 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">     
 	
 	<!-- 配置组件扫描 -->
-	<context:component-scan base-package="cn.ssm.store.mapper"></context:component-scan>
+	<context:component-scan base-package="web.bookStore.mapper"></context:component-scan>
 	
 	<!-- 加载数据库连接配置 -->
 	<util:properties id="dbConfig" location="classpath:db.properties"></util:properties>

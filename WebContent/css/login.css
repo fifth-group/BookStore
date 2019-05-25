@@ -1,0 +1,94 @@
+﻿html {
+    background: #ffe7ce;
+}
+
+#header_entirety {
+    text-align: center;
+    margin: 70px 0 40px;
+}
+
+#header_entirety .haofeng_logo {
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#header_entirety .headline {
+    font-size: 26px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 10px;
+    letter-spacing: 8px;
+    color: #877b7b;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#main_entirety .login_box {
+    width: 400px;
+    height: 440px;
+    margin: 0 auto;
+}
+
+#main_entirety .login_box .input_vessel {
+    width: 388px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: solid 1px #ddd;
+}
+
+#main_entirety .login_box .state_vessel {
+    margin: 10px 0;
+    overflow: hidden
+}
+
+#main_entirety .login_box .state_vessel .login_state {
+    float: left
+}
+
+#main_entirety .login_box .state_vessel .login_state input[name=login_state] {
+    width: 16px;
+    height: 16px;
+    color: #666;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#main_entirety .login_box .state_vessel .login_state span {
+    font-size: 16px;
+    vertical-align: middle
+}
+
+#main_entirety .login_box .state_vessel .forget_password {
+    float: right
+}
+
+#main_entirety .login_box .login_btn {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #ff9b37;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#main_entirety .login_box .register_btn {
+    font-size: 16px;
+    color: #da6a50;
+    text-decoration: underline;
+    float: left;
+}
+
+#main_entirety .login_box .findpw_btn {
+    font-size: 16px;
+    color: #da6a50;
+    text-decoration: underline;
+    float: right;
+}

@@ -19,6 +19,8 @@ public class User implements Serializable {
 	private String phone;     //电话
 	private String image;     //头像
 	private Integer gender;   //性别
+	private String address;    //地址
+	
 	
 	
 	public Integer getId() {
@@ -62,6 +64,12 @@ public class User implements Serializable {
 	}
 	public void setGender(Integer gender) {
 		this.gender = gender;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 	//User构造方法
