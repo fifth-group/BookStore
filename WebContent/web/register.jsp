@@ -111,7 +111,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     if(isMobile){
     	ga('create', gaCodeMobile, 'auto', 'mobileTracker');
     	ga('mobileTracker.send', 'pageview');
-	}
+	};
 
     
 
